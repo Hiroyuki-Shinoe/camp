@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'mails' => 'mails#index'
+  
   resources :users
 
   resources :contents

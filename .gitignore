@@ -9,6 +9,9 @@
 /log/*.log
 /tmp
 
+# Ignore 
+/config/secrets.yml
+
 # Ignore other unneeded files.
 doc/
 *.swp
