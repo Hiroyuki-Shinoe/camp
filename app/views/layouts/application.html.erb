@@ -2,11 +2,30 @@
 <html>
 <head>
   <title>Camp</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
+	<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+        	<nav>
+            <ul class="nav">
+              <li><%= link_to "件名", '#' %></li>
+              <li><%= link_to "飛込営業挨拶", '#' %></li>
+              <li><%= link_to "新規顧客挨拶", '#' %></li>
+              <li><%= link_to "初メール以外の挨拶", '#' %></li>
+              <li><%= link_to "返信の際の挨拶", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
 
 <%= yield %>
 
