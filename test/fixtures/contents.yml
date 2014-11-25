@@ -1,5 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# ーーーーーーーカテゴリー１ーーーーーーーーーーーーーーーーーーーーーーーー
 # 件名
 1:
   id: 1
@@ -218,77 +219,371 @@
 35:
   id: 35
   category_id: 1
-  english: First let me apologize for not writing back to you sooner.  japanese: 初めに、返事が遅れたことにつきまして、深くお詫びいたします。
+  english: First let me apologize for not writing back to you sooner.
   japanese: 初めに、返事が遅れたことにつきまして、深くお詫びいたします。
 
-19:
-  id: 19
+36:
+  id: 36
   category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
+  english: I am sorry for the late reply. 
+  japanese:  返事が遅れたことにつきまして、お詫びいたします。
 
-19:
-  id: 19
+37:
+  id: 37
   category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
+  english: I regret the delay in replying to you.
+  japanese: 返事が遅れたことにつきまして、お詫びいたします。
 
-19:
-  id: 19
+38:
+  id: 38
   category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
+  english: I am sorry that I was unable to respond to you sooner.
+  japanese: 返事が遅れたことにつきまして、お詫びいたします。
 
-19:
-  id: 19
+39:
+  id: 39
   category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
-
-19:
-  id: 19
-  category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
-
-19:
-  id: 19
-  category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
-
-19:
-  id: 19
-  category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
-
-19:
-  id: 19
-  category_id: 1
-  english: Dear Business Partner,
-  japanese: 取引先宛てに出す場合
+  english: I'm sorry to bother you again.
+  japanese: 何度も申し訳ございません。 （連続でメールを送る場合） 
 
 
+# ーーーーーーーカテゴリー２ーーーーーーーーーーーーーーーーーーーーーーーー
+# 自己紹介
+40:
+  id: 40
+  category_id: 2
+  english: My name is ◯◯ △△. 
+  japanese: △△ ◯◯と申します。
+
+41:
+  id: 41
+  category_id: 2
+  english: I work for ABC Co., Ltd.
+  japanese: ABC株式会社に勤務しています。
+
+42:
+  id: 42
+  category_id: 2
+  english: I am a freshman here.
+  japanese: 私は新入社員です。
+
+43:
+  id: 43
+  category_id: 2
+  english: I've been working for this company for 7 years.
+  japanese: 私はこの会社に7年間勤務しています。
+
+44:
+  id: 44
+  category_id: 2
+  english: I am replacing ◯◯ △△, who recently transferred to our Marketing Division.
+  japanese: 私は先日マーケティング部に異動になった△△ ◯◯の後任です。
+
+45:
+  id: 45
+  category_id: 2
+  english: I am working as an engineer of ABC Company.
+  japanese: 私はABC社のエンジニアとして働いています。
+
+46:
+  id: 46
+  category_id: 2
+  english: I am the manager of the Sales Department.
+  japanese: 営業本部の部長の職に就いています。
 
 
+# 会議開催の連絡
+47:
+  id: 47
+  category_id: 2
+  english: We will hold our monthly meeting.
+  japanese: 月例ミーティングを開催します。
+
+48:
+  id: 48
+  category_id: 2
+  english: The next regular meeting is as follows.
+  japanese: 次の定例ミーティングは下記の通りです。
+
+49:
+  id: 49
+  category_id: 2
+  english: Here is the schedule for our next meeting.
+  japanese: 次の会議の予定をお知らせいたします。
+
+50:
+  id: 50
+  category_id: 2
+  english: Let me know by Friday if you can't attend.
+  japanese: 出席できない場合は金曜日までにお知らせください。
 
 
+# 売り込み
+51:
+  id: 51
+  category_id: 2
+  english: We will obliterate all the other competitors with our new product.
+  japanese: 弊社の新製品は競合他社を一掃するでしょう。
+
+52:
+  id: 52
+  category_id: 2
+  english: There is a growing demand for our new product.
+  japanese: 新製品に対する需要は右肩上がりです。
+
+53:
+  id: 53
+  category_id: 2
+  english: These products are very popular among young ladies.
+  japanese: これらの製品は、若い女性にとても人気があります。
+
+54:
+  id: 54
+  category_id: 2
+  english: We believe our product will meet your requirements.
+  japanese: 弊社の製品は貴社のご要望を満たすでしょう。
+
+55:
+  id: 55
+  category_id: 2
+  english: One of the best ways to increase your profits is to increase your advertising budget.
+  japanese: 利益を増やす最善策の一つは、広告費を増やすことです。
+
+56:
+  id: 56
+  category_id: 2
+  english: We can offer you a free sample. 
+  japanese: 無料サンプルをご用意しております。
+
+57:
+  id: 57
+  category_id: 2
+  english: I hope that this will be the first of many opportunities we have to work together.
+  japanese: 今後ご一緒にお仕事をさせていただく機会の第一歩となることを期待しております。
 
 
+# 価格割引の提示または拒絶
+58:
+  id: 58
+  category_id: 2
+  english: Prices will vary according to the quantity of the order.
+  japanese: ご注文数によって応じて価格は変動します。
 
 
+59:
+  id: 59
+  category_id: 2
+  english: We would like to offer you a special price.
+  japanese: 特別価格でのご提供です。
+
+60:
+  id: 60
+  category_id: 2
+  english: Here is a limited time offer for our special customers.
+  japanese: 特別なお客様への期間限定のご提案です。
+
+61:
+  id: 61
+  category_id: 2
+  english: We will discount the price by 1% if paid within 10 days.
+  japanese: 10日以内にお支払いいただければ1%値引きいたします。
+
+62:
+  id: 62
+  category_id: 2
+  english: We offer a discount of 5% for an order of more than 100 cases.
+  japanese: 100ケース以上ご注文いただければ更に5%値引きさせていただきます。
+
+63:
+  id: 63
+  category_id: 2
+  english: I am sorry to say that we are unable to reduce the price.
+  japanese: 申し訳ありませんが値引きはいたしかねます。
+
+64:
+  id: 64
+  category_id: 2
+  english: We would like to discuss the payment terms.
+  japanese: 支払条件の相談に応じます。
+
+65:
+  id: 65
+  category_id: 2
+  english: You may pay in installments.
+  japanese: 分割払いが可能です。
 
 
+# 値引交渉
+66:
+  id: 66
+  category_id: 2
+  english: The price is higher than we expected.
+  japanese: 私達が予想していたよりも価格が高いです。
+
+67:
+  id: 67
+  category_id: 2
+  english: We expected a better price.
+  japanese: 私達はもっと好条件を期待していました。
+
+68:
+  id: 68
+  category_id: 2
+  english: We would like to know if you would give us a discount on a larger order.
+  japanese: 注文量を増やした場合、更に値引きしていただけますでしょうか。
+
+69:
+  id: 69
+  category_id: 2
+  english: We will place an order if you reduce the price by 3%.
+  japanese: あと3%値引きしていただけたら発注したいと思います。
+
+70:
+  id: 70
+  category_id: 2
+  english: If you could compromise on the price for this order, we will increase our orders by 10% over last year.
+  japanese: 今回の価格に譲歩いただければ、発注数を昨年より10%増やす予定です。
+
+71:
+  id: 71
+  category_id: 2
+  english: Please let us know if there is a volume discount available.
+  japanese: 購入数に応じた割引が適用可能かどうかをお知らせください。
+
+72:
+  id: 72
+  category_id: 2
+  english: Could you tell me your conditions for a lower price?
+  japanese: 割引の条件を教えてください。
 
 
+# ーーーーーーーーカテゴリー３ーーーーーーーーーーーーーーーーーーーーーーーーーーー   
+
+# 結びの挨拶(社交的な表現)
+73:
+  id: 73
+  category_id: 3
+  english: If you have any questions, please email us again.
+  japanese: 何かご質問がございましたら、再度お知らせ願います。
+
+74:
+  id: 74
+  category_id: 3
+  english: If you have any questions, please feel free to contact us.
+  japanese: 何かご質問がございましたら、お気軽にお問い合わせください。
+
+75:
+  id: 75
+  category_id: 3
+  english: I hope this information will be helpful.
+  japanese: この情報がお役に立つことを願っています。
+
+76:
+  id: 76
+  category_id: 3
+  english: We hope that we can be of service to you in the future.
+  japanese: 今後ともお役に立てることが出来れば幸いです。
+
+77:
+  id: 77
+  category_id: 3
+  english: Please let us know if there is anything we can do for you.
+  japanese: 何かお力になれることがございましたら、私たちにご連絡ください。
+
+78:
+  id: 78
+  category_id: 3
+  english: We appreciate your continued support.
+  japanese: 今後ともご支援のほど宜しくお願い申し上げます。
+
+79:
+  id: 79
+  category_id: 3
+  english: We look forward to the possibility of serving you again. We look forward to receiving your next order.
+  japanese: またのご用命をお待ち申し上げます。
+
+80:
+  id: 80
+  category_id: 3
+  english: Best wishes for your continued success in the future.
+  japanese: 貴社のますますのご発展をお祈り申し上げます。
 
 
+# 感謝を表す表現
+81:
+  id: 81
+  category_id: 3
+  english: Thank you again for your inquiry.
+  japanese: 問い合わせいただき、重ねて御礼申し上げます。
+
+82:
+  id: 82
+  category_id: 3
+  english: Please accept my heartfelt thanks for your kindness.
+  japanese: ご親切に対し、心より感謝申し上げます。
+
+83:
+  id: 83
+  category_id: 3
+  english: Thank you in advance for your time and effort.
+  japanese: お手数をお掛けいたしますが、宜しくお願い申し上げます。
+
+84:
+  id: 84
+  category_id: 3
+  english: I appreciate your hard work.
+  japanese: ご協力に心より感謝いたします。
+
+85:
+  id: 85
+  category_id: 3
+  english: I really appreciate all your help.
+  japanese: ご協力に心より感謝いたします。
+
+86:
+  id: 86
+  category_id: 3
+  english: Thanks so much for your efforts.
+  japanese: ご協力に心より感謝いたします。
+
+87:
+  id: 87
+  category_id: 3
+  english: Your cooperation is fully appreciated.
+  japanese: ご協力に心より感謝いたします。
+
+88:
+  id: 88
+  category_id: 3
+  english: Thank you for all that you have explained to me about this matter.
+  japanese: ご説明いただきありがとうございました。
+
+89:
+  id: 89
+  category_id: 3
+  english: I appreciate your answering all my questions.
+  japanese: 全ての質問にお答えいただきありがとうございました。
+
+90:
+  id: 90
+  category_id: 3
+  english: We thank you for your understanding.
+  japanese: ご理解いただきありがとうございます。
 
 
+# 再度連絡する際の表現
+91:
+  id: 91
+  category_id: 3
+  english:  I will look into it and get back to you soon.
+  japanese: 確認してすぐにご連絡差し上げます。
 
 
-
-
+# 返信のお願い
+92:
+  id: 92
+  category_id: 3
+  english: I am looking forward to hearing from you.
+  japanese: お返事いただければ幸いです。
 
 
