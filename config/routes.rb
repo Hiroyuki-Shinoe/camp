@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :subcategories
+
   get 'mails' => 'mails#index'
   
   resources :users
