@@ -1,9 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   title: MyString
-#   type: 1
+1:
+  id: 1
+  title: 大分類１
+  type: 1
 
-# two:
-#   title: MyString
-#   type: 1
+2:
+  id: 2
+  title: 大分類２
+  type: 2
+
+3:
+  id: 3
+  title: 大分類３
+  type: 3
