@@ -2,5 +2,6 @@ class MailsController < ApplicationController
 	def index
 	end
 
-	def 
+	def show
+	end
 end
