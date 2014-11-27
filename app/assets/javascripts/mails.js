@@ -14,4 +14,12 @@ $(function(){
     	$('.nav-top').children('li').hide();
         $('.category_3').show();
     });
+
+    $('.nav-top button').click(function() {
+        $('.compose').hide();
+        $(this).next('.compose').show();
+    });
+
+
+
 });
