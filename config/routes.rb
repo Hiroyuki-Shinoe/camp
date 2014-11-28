@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'mails' => 'mails#index'
+  match '/mails', to: 'mails#index', via: 'get'
+  match '/contents', to: 'contents#subcategory_1', via: 'get'
+
+
+  resources :subcategories
   
   resources :users
 

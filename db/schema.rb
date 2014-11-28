@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122104451) do
+ActiveRecord::Schema.define(version: 20141125143413) do
 
   create_table "categories", force: true do |t|
     t.string   "title"
@@ -26,11 +26,19 @@ ActiveRecord::Schema.define(version: 20141122104451) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "japanese"
+    t.integer  "subcategory_id"
   end
 
   create_table "storages", force: true do |t|
     t.text     "content"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subcategories", force: true do |t|
+    t.string   "title"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
