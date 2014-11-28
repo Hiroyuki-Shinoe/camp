@@ -1,5 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+contents_1:
+  category_id: 1
+  english: Hi how are you
+  japanese: はじめまして
 
+contents_2:
+  category_id: 2
+  english: afdsafadsfdsaf
+  japanese: ｄさｆｄさｆ
+
+ 
 one:
   category_id: 1
   body: MyText
