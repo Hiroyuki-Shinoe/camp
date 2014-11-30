@@ -6,7 +6,7 @@
   padding: 20px
 }
 
-.nav-left li
+.button-left li
 {
   width: 70px;
   height: auto;
@@ -19,12 +19,13 @@
 ul.nav-top > li 
 {
   display : none ;
+  clear :both;
   float: left;
 }
 
 .compose
 {
-  display : none ;
+  display : none;
   float: none;
 }
 .editor
