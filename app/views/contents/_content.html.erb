@@ -1,9 +1,12 @@
 <li class="subcategory_<%= content.subcategory_id %>">
-	<button type="button" class="btn btn-content">
-		<%= link_to content.japanese, reflect_content_path(content) ,remote: true %>
+		<%= link_to reflect_content_path(content) ,remote: true, class: 'lsls' do %>
+		<button class="btn btn-content">
+			<%= content.japanese %>
 	</button>
+	<% end %>
 <!-- 		<%= content.japanese %>
  --><!-- 		<ul class="compose_2"><%= content.english %></ul>
  --><!--   <%= content.japanese %> -->
 <!--   <%= content.english %></br><%= content.japanese %> -->
 </li>
+
