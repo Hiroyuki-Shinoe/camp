@@ -1,23 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-contents_1:
-  category_id: 1
-  english: Hi how are you
-  japanese: はじめまして
 
-contents_2:
-  category_id: 2
-  english: afdsafadsfdsaf
-  japanese: ｄさｆｄさｆ
 
-<<<<<<< HEAD
- 
-one:
-=======
 # ーーーーーーーカテゴリー１ーーーーーーーーーーーーーーーーーーーーーーーー
 # 件名
 1:
   id: 1
->>>>>>> d2622f67378e54c93213a07b9c3cc5afc56bc1d3
   category_id: 1
   subcategory_id: 1
   english: Request for estimate

@@ -37,6 +37,13 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 gem 'normalize-rails'
 
+# bootstrap customize
+gem 'therubyracer'
+gem 'twitter-bootswatch-rails', '~> 3.1.1'
+gem 'twitter-bootswatch-rails-helpers'
+gem 'execjs'
+gem 'less-rails'
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end

@@ -6,7 +6,7 @@
   padding: 20px
 }
 
-.nav-left li
+.button-left li
 {
 	clear: both;
 	list-style: none;
@@ -18,11 +18,12 @@
 ul.nav-top > li 
 {
   display : none ;
+  clear :both;
 }
 
 .compose
 {
-  display : none ;
+  display : none;
 }
 
 .compose li
