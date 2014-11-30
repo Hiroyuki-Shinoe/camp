@@ -31,17 +31,38 @@ $(function(){
 
     // });
 
-    $('.nav-top button').click(function() {
-        var $div = $(this).next('.compose');
+    $('.btn-info').click(function() {
+        var $div = $(this).next('.compose_1');
         if ($div.css('display') == 'block')
         {
             $div.hide();
         }
         else
         {
-            $('.compose').hide();
+            $('.compose_1').hide();
             $div.toggle();
         }
 
     });
+
+     $('.btn-content').click(function() {
+        var $div = $(this).next('.compose_2');
+        if ($div.css('display') == 'block')
+        {
+            $div.hide();
+        }
+        else
+        {
+            $('.compose_2').hide();
+            $div.toggle();
+        }
+
+    });
+
+
+
+
+
 });
+
+
