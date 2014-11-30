@@ -9,16 +9,19 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-</head>
-<body>
-	<%= render 'layouts/header' %>
-    <%= yield %>
-  <%= render 'layouts/sidebar' %>
-  <div class="container">
-  <%= render 'layouts/footer' %>
-  </br>
-  </br>
-      <%= debug(params) if Rails.env.development? %>
-  </div> 
-</body>
+  </head>
+  <body>
+    <div class="main_container">  
+      <div class='text_area_box'><%= text_area :page, :comtent, :size => "50x10"%></div>
+      <div class="header"><%= render 'layouts/header' %></div>
+      <%= yield %>
+      <div class="sidebar"><%= render 'layouts/sidebar' %></div>
+      <div class="container"><%= render 'layouts/footer' %>
+        </br>
+        </br>
+        </br>
+        <%= debug(params) if Rails.env.development? %>
+      </div>
+    </div> 
+  </body>
 </html>
