@@ -1,4 +1,4 @@
 <li class="subcategory_<%= content.subcategory_id %>">
-	<%= content.japanese %>
+	<%= link_to content.japanese, reflect_content_path(content), remote: true %>
 <!--   <%= content.english %></br><%= content.japanese %>
  --></li>

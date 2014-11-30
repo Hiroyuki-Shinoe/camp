@@ -1,5 +1,5 @@
 class ContentsController < ApplicationController
-  before_action :set_content, only: [:show, :edit, :update, :destroy]
+  before_action :set_content, only: [:show, :edit, :update, :destroy, :reflect]
 
   # GET /contents
   # GET /contents.json
@@ -59,6 +59,10 @@ class ContentsController < ApplicationController
       format.html { redirect_to contents_url }
       format.json { head :no_content }
     end
+  end
+
+  def reflect
+    @en_text = @content.english
   end
 
   private
