@@ -176,7 +176,7 @@
   id: 25
   category_id: 1
   subcategory_id: 3
-  english: It's been a long time since we met last time. I hope you are doing fine. 
+  english: It has been a long time since we met last time. I hope you are doing fine. 
   japanese: 大変ご無沙汰をしておりますが、お元気でお過ごしのことと思います。
 
 26:
@@ -280,7 +280,7 @@
   id: 39
   category_id: 1
   subcategory_id: 6
-  english: I'm sorry to bother you again.
+  english: I am sorry to bother you again.
   japanese: 何度も申し訳ございません。 （連続でメールを送る場合） 
 
 
@@ -312,7 +312,7 @@
   id: 43
   category_id: 2
   subcategory_id: 7
-  english: I've been working for this company for 7 years.
+  english: I have been working for this company for 7 years.
   japanese: 私はこの会社に7年間勤務しています。
 
 44:
@@ -363,7 +363,7 @@
   id: 50
   category_id: 2
   subcategory_id: 8
-  english: Let me know by Friday if you can't attend.
+  english: Let me know by Friday if you can not attend.
   japanese: 出席できない場合は金曜日までにお知らせください。
 
 
@@ -675,5 +675,15 @@
   subcategory_id: 15
   english: I am looking forward to hearing from you.
   japanese: お返事いただければ幸いです。
+
+# 文末の挨拶
+93:
+  id: 93
+  category_id: 3
+  subcategory_id: 16
+  english: Sincerely,
+  japanese: 敬具。
+
+
 
 
