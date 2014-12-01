@@ -1,14 +1,27 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
   <strong>Category:</strong>
   <%= @content.category_id %>
 </p>
 
 <p>
-  <strong>Body:</strong>
-  <%= @content.body %>
+  <strong>Subcategory:</strong>
+  <%= @content.subcategory_id %>
 </p>
+
+<p>
+  <strong>English:</strong>
+  <%= @content.english %>
+</p>
+
+<p>
+  <strong>Japanese:</strong>
+  <%= @content.japanese %>
+</p>
+
+
 
 <%= link_to 'Edit', edit_content_path(@content) %> |
 <%= link_to 'Back', contents_path %>

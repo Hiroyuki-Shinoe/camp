@@ -1,22 +1,14 @@
-<sidebar class="navbar navbar-fixed-left navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container">
-        <nav>
-          <ul class="nav-left">
-            <%= yield :sidebar %> 
-            <li class="big_category_1">
-              <button type="button" class="btn btn-default navbar-btn">大分類１</button>
-            </li>
-            <li class="big_category_2">
-              <button type="button" class="btn btn-default navbar-btn">大分類２</button>
-            </li>
-            <li class="big_category_3">
-              <button type="button" class="btn btn-default navbar-btn">大分類３</button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
- </sidebar>
-
-
+<sidebar class="btn-group-vertical">
+  <ul class="button-left">
+    <%= yield :sidebar %> 
+    <li class="big_category_1">
+      <button type="button" class="btn btn-primary btn-lg">文頭表現集</br>(件名や宛名含む)</button>
+    </li>
+    <li class="big_category_2">
+      <button type="button" class="btn btn-primary btn-lg">文中表現集</button>
+    </li>
+    <li class="big_category_3">
+      <button type="button" class="btn btn-primary btn-lg">文末表現集</button>
+    </li>
+  </ul>
+</sidebar>

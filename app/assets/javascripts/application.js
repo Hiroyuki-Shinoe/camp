@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require lumen/loader
+//= require lumen/bootswatch
+//= require_directory ./

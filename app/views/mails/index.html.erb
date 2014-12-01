@@ -1,5 +1,7 @@
-<!-- エディタ -->
-<section class="lesson-editor">
-    <form id="editor-form" method="post" action="/html_ajax"> 
-    	<div id="save-text"></div>
-</section>
+<div class="category">
+  <ul class="nav-top">
+  	<!-- viewに書かれたrenderはパーシャルを呼び出す。ここでは、パスを指定して呼び出すのではなく、オブジェクトを指定して呼び出している。 -->
+    <%= render @subcategories %>
+  </ul>
+</div>
+

@@ -1,26 +1,70 @@
 .nav-top li
 {
-  float: left;
   list-style: none ;
   margin : 10px ;
+  padding: 20px
 }
 
-.nav-left li
+.clear {
+  clear:both;
+}
+.button-left li
 {
+  width: 70px;
+  height: auto;
 	clear: both;
 	list-style: none;
 	margin: 10px;
 	margin-top: 70px;
 }
-
-ul.nav-top li 
+//   > の記号は、親要素の直接の子要素に適用されるセレクタで、孫要素以下を対象から外す。
+ul.nav-top > li 
 {
   display : none ;
+  clear :both;
+  float: left;
+}
+
+.compose_1
+{
+  display : none;
+  float: none;
+}
+
+.compose_2
+{
+  display: none;
+}
+.editor
+{
+  margin-left: 300px;
+}
+.sidebar
+{
+  float: left;
+  width: 14%;
+}
+
+.category {
+  float:left;
+  width: 20%;
+}
+
+.text_area_box
+{
+  float: right;
+  width: 37%;
+  height: 30%;
+  // margin: auto;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+.compose li
+{
+  float: none;
 }
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
 }
@@ -35,6 +79,5 @@ footer ul {
 }
 
 footer ul li {
-  float: left;
   margin-left: 10px;
 }
