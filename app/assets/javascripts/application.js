@@ -16,4 +16,4 @@
 //= require_tree .
 //= require lumen/loader
 //= require lumen/bootswatch
-//= require_directory .
+//= require_directory ./
