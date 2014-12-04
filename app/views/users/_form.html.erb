@@ -1,33 +1,51 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<div class="bs-docs-section">
+  <div class="row">
+    <div class="span6 offset3">   
+      <%= form_for(@user) do |f| %>
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+      <%= render 'shared/error_messages' %>
+
+      <div class="col-lg-6">
+        <div class="well bs-component">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>ユーザー登録</legend>
+              <div class="form-group">
+                <%= f.label "ユーザーネーム" , class: "col-lg-2 control-label" %>
+                <div class="col-lg-10">
+                  <%= f.text_field :name, class: "form-control", id: "inputName", placeholder: "Name" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <%= f.label "メールアドレス" , class: "col-lg-2 control-label" %>
+                <div class="col-lg-10">
+                  <%= f.text_field :email, class: "form-control", id: "inputEmail", placeholder: "Email" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <%= f.label "パスワード" , class: "col-lg-2 control-label" %>
+                <div class="col-lg-10">
+                  <%= f.password_field :password, class: "form-control", id: "inputPassword", placeholder: "Password" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <%= f.label "パスワード確認" , class: "col-lg-2 control-label" %>
+                <div class="col-lg-10">
+                  <%= f.password_field :password_confirmation, class: "form-control", id: "inputPassword_confirmation", placeholder: "Password_confirmation" %>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <%= f.submit "登録", class: "btn btn-primary" %>
+                  <button class="btn btn-default">キャンセル</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <% end %>
+        </div>
+      </div>
     </div>
-  <% end %>
+  </div>
+</div>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password_digest %><br>
-    <%= f.text_field :password_digest %>
-  </div>
-  <div class="field">
-    <%= f.label :remember_token %><br>
-    <%= f.text_field :remember_token %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
