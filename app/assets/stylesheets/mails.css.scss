@@ -5,9 +5,11 @@
   padding: 20px
 }
 
-.clear {
+.clear 
+{
   clear:both;
 }
+
 .button-left li
 {
   width: 70px;
@@ -17,6 +19,7 @@
 	margin: 10px;
 	margin-top: 70px;
 }
+
 //   > の記号は、親要素の直接の子要素に適用されるセレクタで、孫要素以下を対象から外す。
 ul.nav-top > li 
 {
@@ -35,10 +38,12 @@ ul.nav-top > li
 {
   display: none;
 }
+
 .editor
 {
   margin-left: 300px;
 }
+
 .sidebar
 {
   float: left;
@@ -59,6 +64,7 @@ ul.nav-top > li
   margin-top: 30px;
   padding-top: 10px;
 }
+
 .compose li
 {
   float: none;

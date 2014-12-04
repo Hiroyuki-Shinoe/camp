@@ -43,6 +43,8 @@ gem 'twitter-bootswatch-rails', '~> 3.1.1'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'execjs'
 gem 'less-rails'
+gem 'better_errors'
+gem 'binding_of_caller'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
