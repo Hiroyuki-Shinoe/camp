@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
-
+  root 'about#index'
+  match '/about', to: 'about#index', via: 'get'
   match '/mails', to: 'mails#index', via: 'get'
   match '/contents', to: 'contents#subcategory_1', via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'get'
 
 
   resources :subcategories
   
   resources :users
+
+  resources :sessions, only:[ :new, :create, :destroy]
 
   resources :contents do
     member do

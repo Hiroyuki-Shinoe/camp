@@ -1,0 +1,35 @@
+<div class="bs-docs-section">
+	<div class="row">
+		<div class="span6 offset3">
+			<%= form_for(:session, url: sessions_path) do |f| %>
+			<div class="col-lg-6">
+				<div class="well bs-component">
+					<form class="form-horizontal">
+						<fieldset>
+							<legend>サインイン</legend>
+							<div class="form-group">
+								<%= f.label "メールアドレス" , class: "col-lg-2 control-label" %>
+								<div class="col-lg-10">
+									<%= f.text_field :email, class: "form-control", id: "inputEmail", placeholder: "Email" %>
+								</div>
+							</div>
+							<div class="form-group">
+								<%= f.label "パスワード" , class: "col-lg-2 control-label" %>
+								<div class="col-lg-10">
+									<%= f.password_field :password, class: "form-control", id: "inputPassword", placeholder: "Password" %>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button type="submit" class="btn btn-primary">サインイン</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+					<% end %>
+					<p>New user? <%= link_to "ユーザー登録はこちら", new_user_path %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
