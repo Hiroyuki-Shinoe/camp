@@ -6,4 +6,4 @@
     <%= render @subcategories %>
   </ul>
 </div>
-<div class='text_area_box'><%= text_area :page, :content, :size => "63x30"%></div>
+<%= render "storages/form", storage: @storage %>

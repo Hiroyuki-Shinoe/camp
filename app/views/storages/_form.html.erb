@@ -1,0 +1,7 @@
+<%= form_for(storage) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="text_area_box">
+    <%= f.text_area :content, :size => "63x30" %>
+  </div>
+  <%= f.submit "保存", class: "btn btn-large btn-primary" %>
+<% end %>

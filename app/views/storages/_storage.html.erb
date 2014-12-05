@@ -1,0 +1,9 @@
+<li>
+  <span class="user">
+    <%= link_to storage.user.name, storage.user %>
+  </span>
+  <span class="content"><%= storage.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(storage.created_at) %> ago.
+  </span>
+</li>

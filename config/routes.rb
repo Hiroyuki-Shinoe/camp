@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
 
+  resources :storages
 
   resources :subcategories
   
