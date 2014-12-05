@@ -1,24 +1,20 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Password digest:</strong>
-  <%= @user.password_digest %>
-</p>
-
-<p>
-  <strong>Remember token:</strong>
-  <%= @user.remember_token %>
-</p>
-
+<div class="row">
+	<aside class="span4">
+		<section>
+			<h1>
+				<%= @user.name %>
+			</h1>
+		</section>
+	</aside>
+	<div class="span8">
+		<% if @user.storages.any? %>
+		<h3>保存したメール文 (<%= @user.storages.count %>)</h3>
+		<ol class="microposts">
+			<%= render @storages %>
+		</ol>
+		<%= will_paginate @storages %>
+		<% end %>
+	</div>
+</div>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

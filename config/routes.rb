@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   match '/mails', to: 'mails#index', via: 'get'
   match '/contents', to: 'contents#subcategory_1', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
-  match '/signout', to: 'sessions#destroy', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
 
 
   resources :subcategories
