@@ -8,6 +8,7 @@ class StoragesController < ApplicationController
 
   # GET /storages/1
   def show
+    
   end
 
   # GET /storages/new
