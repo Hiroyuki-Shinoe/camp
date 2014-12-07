@@ -24,7 +24,8 @@ $(function(){
 
 
     $('.big_category').click(function(){
-        $('.button-left').children('li').show();
+        console.log(1);
+        $('.sidebar').show();
     });
 
     
