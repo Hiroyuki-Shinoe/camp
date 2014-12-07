@@ -1,3 +1,49 @@
+.jumbotron
+{
+  text-align: center;
+  background-image: url(/images/6H.jpg);
+  background-size: cover;
+  h1
+  {
+    margin-bottom: 20px;
+  }
+}
+
+.page-header
+{
+  text-align: center;
+  font-weight: bold;
+  h2
+  {
+    margin-bottom: 0.1em;
+  }
+  .subtitle
+  {
+    font-weight: normal;
+  }
+}
+
+.page-header2
+{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  h2
+  {
+    margin-bottom: 0.1em;
+  }
+  p
+  {
+    padding-top: 30px;
+    margin-bottom: 0.1em;
+  }
+  .subtitle
+  {
+    font-weight: normal;
+  }
+}
+
 .nav-top li
 {
   list-style: none ;
@@ -75,6 +121,17 @@ ul.nav-top > li
   list-style: none;
 }
 
+#temp
+{
+  float: right; 
+}
+
+
+.footer
+{
+  background-color: #223134;
+  color: #fff;
+}
 
 footer {
   border-top: 1px solid #eaeaea;
