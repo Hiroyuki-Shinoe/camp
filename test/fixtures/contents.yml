@@ -42,7 +42,6 @@
   english: Thank your for your advise
   japanese: アドバイスに対するお礼
 
-
 # 宛名
 7:
   id: 7
@@ -541,8 +540,8 @@
   id: 74
   category_id: 3
   subcategory_id: 12
-  english: If you have any questions, please feel free to contact us.
-  japanese: 何かご質問がございましたら、お気軽にお問い合わせください。
+  english: Do not hesitate to contact us again if you require any further information.
+  japanese: 他に何か必要な情報等ございましたら、再度ご連絡下さい。
 
 75:
   id: 75
@@ -683,6 +682,40 @@
   subcategory_id: 16
   english: Sincerely,
   japanese: 敬具。
+
+
+# ーーーーーーーカテゴリー１ーーーーーーーーーーーーーーーーーーーーーーーー
+# 件名
+94:
+  id: 94
+  category_id: 1
+  subcategory_id: 1
+  english: Summary of our meeting with ABC Co., Ltd.
+  japanese: ABC社との会議の概要について
+
+# ーーーーーーーカテゴリー２ーーーーーーーーーーーーーーーーーーーーーーーー
+# ファイルを添付したことの通知
+95:
+  id: 95
+  category_id: 2
+  subcategory_id: 17
+  english: I am attaching xxx for your reference.
+  japanese: xxxのファイルを添付いたしますのでご確認下さい。
+
+# 受信したメールの添付ファイルが開けない時
+96:
+  id: 96
+  category_id: 2
+  subcategory_id: 18
+  english: I am afraid I cannot open the attachment.
+  japanese: 申し訳ありませんが、添付ファイルが開けません。
+
+97:
+  id: 97
+  category_id: 2
+  subcategory_id: 18
+  english: Could you send it again in a different format?
+  japanese: 他のファイル形式で再送いただけませんでしょうか？
 
 
 

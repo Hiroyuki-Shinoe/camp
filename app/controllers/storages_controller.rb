@@ -1,5 +1,7 @@
 class StoragesController < ApplicationController
   before_action :set_storage, only: [:show, :edit, :update, :destroy]
+  before_action :signed_in_user, only: [:create, :destroy]
+  before_action :correct_user, only: :destroy
 
   # GET /storages
   def index
@@ -22,29 +24,33 @@ class StoragesController < ApplicationController
 
   # POST /storages
   def create
-    @storage = Storage.new(storage_params)
+    @storage = current_user.storages.build(storage_params)
     if @storage.save
       flash[:success] = "文章は保存されました。"
       redirect_to "/mails"
     else
-      flash[:error] = "error！ 保存できる文章がありません。"
+      flash[:error] = "エラー！ 保存できる文章がありません。"
       redirect_to '/mails'
     end
   end
 
   # PATCH/PUT /storages/1
   def update
-    if @storage.update(storage_params)
-      redirect_to @storage, notice: 'Storage was successfully updated.'
-    else
-      render action: 'edit'
+    respond_to do |format|
+      if @storage.update(storage_params)
+        format.html { redirect_to @storage, notice: 'Storage was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @tweet.errors, status: :unprocessable_entity }
+      end
     end
   end
 
   # DELETE /storages/1
   def destroy
     @storage.destroy
-    redirect_to storages_url, notice: 'Storage was successfully destroyed.'
+    redirect_to root_url
   end
 
   private
@@ -57,4 +63,8 @@ class StoragesController < ApplicationController
     def storage_params
       params.require(:storage).permit(:content)
     end
+
+    def correct_user
+      @storage = Storage.find_by(id: params[:id])
+      redirect_to root_url unless current_user?(@storage.user)
 end

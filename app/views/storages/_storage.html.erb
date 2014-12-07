@@ -1,9 +1,14 @@
 <li>
-  <span class="user">
-    <%= link_to storage.user.name, storage.user %>
-  </span>
-  <span class="content"><%= storage.content %></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(storage.created_at) %> ago.
-  </span>
+	<span class="user">
+		<%= link_to storage.user.name, storage.user %>
+	</span>
+	<span class="content"><%= storage.content %></span>
+	<span class="timestamp">
+		Posted <%= time_ago_in_words(storage.created_at) %> ago.
+	</span>
+	<% if current_user?(storage.user) %>
+	<% link_to "削除", storage, method: :delete,
+	data: { confirm: "本当に削除しますか？" },
+	title: storage.content %>
+	<% end %>
 </li>

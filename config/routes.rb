@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   match '/contents', to: 'contents#subcategory_1', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
+  match '/storages', to: 'storages#index', via: 'get'
+  match '/storages', to: 'storages#destroy', via: 'delete'
 
   resources :storages
 
