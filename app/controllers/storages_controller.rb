@@ -6,11 +6,14 @@ class StoragesController < ApplicationController
   # GET /storages
   def index
     @storages = Storage.all
+    if signed_in?
+      @storage = current_user.storages.build
+      @feed_storages = current_user.storages.paginate(page: params[:page])
+    end
   end
 
   # GET /storages/1
-  def show
-    
+  def show    
   end
 
   # GET /storages/new
