@@ -67,4 +67,5 @@ class StoragesController < ApplicationController
     def correct_user
       @storage = Storage.find_by(id: params[:id])
       redirect_to root_url unless current_user?(@storage.user)
+    end
 end
