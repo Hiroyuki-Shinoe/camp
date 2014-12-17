@@ -1,3 +1,14 @@
+.collapse 
+{
+display: none;
+visibility: hidden;
+}
+
+.navbar-static-side
+{
+  background-color: #404040;
+}
+
 .jumbotron
 {
   text-align: center;
@@ -127,7 +138,7 @@ ul.nav-top > li
 }
 
 
-.footer
+.footer 
 {
   background-color: #223134;
   color: #fff;
