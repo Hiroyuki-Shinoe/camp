@@ -5,4 +5,7 @@ class AboutController < ApplicationController
   		@feed_storages = current_user.storages.paginate(page: params[:page])
   	end
   end
+
+  def sample
+  end
 end
