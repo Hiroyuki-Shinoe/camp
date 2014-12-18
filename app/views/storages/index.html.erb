@@ -29,9 +29,56 @@
     <div class="span8">
       <% if @feed_storages.any? %>
       <h3>保存した文章</h3>
-      <ol class="microposts">
-        <%= render @feed_storages %>
+      <ol class="microposts">商談
+        <div class="first-group">
+          <%= render @feed_storages %>
+        </div>
       </ol>
+      <div class="text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              商談
+            </button>
+          </div>
+          <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content animated bounceInRight">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <i class="fa fa-laptop modal-icon"></i>
+                  <h4 class="modal-title">商談</h4>
+                  <small class="font-bold">このコンテンツは商談に関するテンプレートです</small>
+                </div>
+                <div class="modal-body">
+                  <p>Hello Ms. Taylor, 
+                    My name is Osamu Makihara. I am the purchasing manager of East West Trading. 
+                    I am contacting you to inquire about your services. First of all, I would like to know the features of your services. Can you explain what makes your services different from others? 
+                    Second, do you have a price list for your services? Lastly, do you provide customer support for companies in Japan? 
+                    We are really interested in your services and hoping to install them into our system. 
+                    I thank you for your attention and look forward to hearing from you. 
+                    Sincerely yours,
+                  </p>
+                  </br>
+                  </br>
+                  <p>
+                    Dear Sir or Madam, 
+                    This is my first time to send e-mail to you. 
+                    My name is Ken Nakata, working for XXX Co., Ltd. in Japan, and responsible for the purchasing. 
+                    I am writing to request an estimate because we are interested in your product, Z-123-yyy. 
+                    Please let me know the lowest export price and minimum order. 
+                    I look forward to hearing from you. 
+                    Sincerely yours,
+                  </p>
+                    <div class="form-group"> 
+                  　</div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Don't uses</button>
+                    <button type="button" class="btn btn-primary">Use this template</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
       <%= will_paginate @feed_storages %>
       <% end %>
     </div>
