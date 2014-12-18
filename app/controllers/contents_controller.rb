@@ -65,6 +65,10 @@ class ContentsController < ApplicationController
     @en_text = @content.english
   end
 
+  def reflectjp
+    @en_text = @content.japanese
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_content

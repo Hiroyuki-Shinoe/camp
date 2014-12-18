@@ -1,7 +1,27 @@
+#mail_compose
+{
+  background-color: #2f4050;
+}
+
 .collapse 
 {
-display: none;
-visibility: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+.mail_category_1 > :not(.category_1)
+{
+  display: none;
+}
+
+.mail_category_2 > :not(.category_2)
+{
+  display: none;
+}
+
+.mail_category_3 > :not(.category_3)
+{
+  display: none;
 }
 
 .navbar-static-side
@@ -71,10 +91,10 @@ visibility: hidden;
 {
   width: 70px;
   height: auto;
-	clear: both;
-	list-style: none;
-	margin: 10px;
-	margin-top: 70px;
+  clear: both;
+  list-style: none;
+  margin: 10px;
+  margin-top: 70px;
 }
 
 //   > の記号は、親要素の直接の子要素に適用されるセレクタで、孫要素以下を対象から外す。
