@@ -1,9 +1,8 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# ーーーーーーー初期設定テンプレートーーーーーーーーーーーーーーーーーーーーーーーー
+# 会社訪問及び面談のアポイント取り
 
-# one:
-#   content: MyText
-#   user_id: 1
+1:
+  id: 1
+  content: Visit to XXX Co. Dear Mr.XX I hope you are doing fine. I am planning to be in Singapore from 12/18 to 12/23, and would like to visit XXX Co. on Monday, December, 22. Please let me know if this date is convenient for you. I am looking forward to seeing you and. Sincerely,
+  user_id: 1
 
-# two:
-#   content: MyText
-#   user_id: 1

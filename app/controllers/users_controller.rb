@@ -7,11 +7,16 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    if signed_in?
+      @storage = current_user.storages.build
+      @feed_storages = current_user.storages.paginate(page: params[:page])
+    end
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    @storages = @user.storages.paginate(page: params[:page])
   end
 
   # GET /users/new
@@ -30,7 +35,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "グローバルビジネスの世界へようこそ！"
-      redirect_to @user
+      redirect_to '/mails'
     else
       render 'new'
     end
@@ -41,7 +46,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to @user, notice: '登録情報の変更が終了しました.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -59,21 +64,14 @@ class UsersController < ApplicationController
   end
 
   private
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
-    end
-
-    # before actions
-
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
     end
 
-    def signed_in_user
-      redirect_to signin_url, notice: "サインインしてください" unless signed_in?
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def user_params
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 
     def correct_user

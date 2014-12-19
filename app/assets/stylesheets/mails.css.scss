@@ -1,3 +1,80 @@
+#mail_compose
+{
+  background-color: #2f4050;
+}
+
+.collapse 
+{
+  display: none;
+  visibility: hidden;
+}
+
+.mail_category_1 > :not(.category_1)
+{
+  display: none;
+}
+
+.mail_category_2 > :not(.category_2)
+{
+  display: none;
+}
+
+.mail_category_3 > :not(.category_3)
+{
+  display: none;
+}
+
+.navbar-static-side
+{
+  background-color: #404040;
+}
+
+.jumbotron
+{
+  text-align: center;
+  background-image: url(/images/6H.jpg);
+  background-size: cover;
+  h1
+  {
+    margin-bottom: 20px;
+  }
+}
+
+.page-header
+{
+  text-align: center;
+  font-weight: bold;
+  h2
+  {
+    margin-bottom: 0.1em;
+  }
+  .subtitle
+  {
+    font-weight: normal;
+  }
+}
+
+.page-header2
+{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  h2
+  {
+    margin-bottom: 0.1em;
+  }
+  p
+  {
+    padding-top: 30px;
+    margin-bottom: 0.1em;
+  }
+  .subtitle
+  {
+    font-weight: normal;
+  }
+}
+
 .nav-top li
 {
   list-style: none ;
@@ -14,10 +91,10 @@
 {
   width: 70px;
   height: auto;
-	clear: both;
-	list-style: none;
-	margin: 10px;
-	margin-top: 70px;
+  clear: both;
+  list-style: none;
+  margin: 10px;
+  margin-top: 70px;
 }
 
 //   > の記号は、親要素の直接の子要素に適用されるセレクタで、孫要素以下を対象から外す。
@@ -68,6 +145,23 @@ ul.nav-top > li
 .compose li
 {
   float: none;
+}
+
+.top-page1 li
+{
+  list-style: none;
+}
+
+#temp
+{
+  float: right; 
+}
+
+
+.footer 
+{
+  background-color: #223134;
+  color: #fff;
 }
 
 footer {

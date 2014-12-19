@@ -1,0 +1,39 @@
+<!--Navbar -->
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="container">
+      <div class="navbar-brand">フェアリーメール</div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "サインアウト", signout_path, method: "delete" %></li>
+          <li><%= link_to "お問い合わせ", '#' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End navbar -->
+
+<div class="container">
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+    </aside>
+    <div class="span8">
+      <% if @feed_storages.any? %>
+      <h3>保存した文章</h3>
+      <ol class="microposts">
+        <%= render @feed_storages %>
+      </ol>
+      <%= will_paginate @feed_storages %>
+      <% end %>
+    </div>
+  </div>
+</div>

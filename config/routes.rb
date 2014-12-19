@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
   root 'about#index'
   match '/about', to: 'about#index', via: 'get'
+  match '/about/sample', to: 'about#sample', via: 'get'  
   match '/mails', to: 'mails#index', via: 'get'
+  match '/mails/start', to: 'mails#start', via: 'get'
+  match '/mails/index2', to: 'mails#index2', via: 'get'
   match '/contents', to: 'contents#subcategory_1', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
-  match '/signout', to: 'sessions#destroy', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+  match '/storages', to: 'storages#index', via: 'get'
+  match '/storages', to: 'storages#destroy', via: 'delete'
 
+  resources :storages
 
   resources :subcategories
   

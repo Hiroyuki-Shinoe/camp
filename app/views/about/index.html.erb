@@ -1,16 +1,159 @@
-<div class="center hero-unit">
-	<br>
-	<h1>あなたのビジネスを世界へ広めよう！</h1>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="top-page1">
-		<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-info btn-lg" %>
+<% if signed_in? %>
+
+<!--Navbar -->
+<div class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="container">
+			<div class="navbar-brand">
+				<div class="service_name">Lang Block</div>
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><%= link_to "サインアウト", signout_path, method: "delete" %></li>
+					<li><%= link_to "お問い合わせ", '#' %></li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	<br>
-	<br>
-	<br>
 </div>
+<!-- End navbar -->
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+	<div class="container">
+		<h1>Your Business,<br>To the World</h1>
+		<p>ボタンを押して英文ビジネスメールを作成！
+			<br>
+			<br>
+			無料で使える、企業の海外展開支援サービス
+		</p>
+		<p>
+			<%= link_to "メール作成はこちら！", '/mails', class: "btn btn-default btn-lg" %>
+		</p>
+		<p>
+			<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-default btn-lg" %>
+		</p>
+		<small>ユーザー登録すると完成した文章を保存しておくことができます。</small>
+		<br>
+		<small>既にアカウントをお持ちですか? <%= link_to "ログイン", signin_path %></small>
+	</div>
+</div>
+<!-- End Jumbotron -->
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div>
+			<div class="page-header">
+				<h2>あなたのビジネスを世界へ広めよう！</h2>
+				<small class="subtitle">ようこそグローバルビジネスの舞台へ</small>
+			</div>
+			<div class="col-sm-4">
+				<h3>定型文作成にかかる時間と手間を省きます。</h3>
+			</div>
+			<div class="col-sm-4">
+				<h3>１つのページ内で様々な文章を作成できます。</h3>
+			</div>
+			<div class="col-sm-4">
+				<h3>ボタンを押して文章を出す直感的な操作が可能です。</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Main Content -->
+
+<!-- Call to Action -->
+<hr>
+<div class="page-header2">
+	<h3>私達はあなたのビジネスが世界へ広まるサポートをします。</h3>
+	<p><%= link_to "さっそくメールを作成する", '/mails', class: "btn btn-default btn-lg" %></p>
+</div>
+<!-- End Call to Action -->
+
+<%= render 'layouts/footer' %>
+
+<% else %>
+
+<!--Navbar -->
+<div class="navbar navbar-default">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="container">
+			<div class="service_name">Lang Block</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><%= link_to "ログイン", signin_path %></li>
+					<li><%= link_to "お問い合わせ", '#' %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End navbar -->
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+	<div class="container">
+		<h1>Your Business,<br>To the World</h1>
+		<p>ボタンを押して英文ビジネスメールを作成！
+			<br>
+			<br>
+			無料で使える、企業の海外展開支援サービス
+		</p>
+		<p>
+			<%= link_to "メール作成はこちら！", '/mails', class: "btn btn-default btn-lg" %>
+		</p>
+		<p>
+			<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-default btn-lg" %>
+		</p>
+		<small>ユーザー登録すると完成した文章を保存しておくことができます。</small>
+		<br>
+		<small>既にアカウントをお持ちですか? <%= link_to "ログイン", signin_path %></small>
+	</div>
+</div>
+<!-- End Jumbotron -->
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div>
+			<div class="page-header">
+				<h2>あなたのビジネスを世界へ広めよう！</h2>
+				<small class="subtitle">ようこそグローバルビジネスの舞台へ</small>
+			</div>
+			<div class="col-sm-4">
+				<h3>定型文作成にかかる時間と手間を省きます。</h3>
+			</div>
+			<div class="col-sm-4">
+				<h3>１つのページ内で様々な文章を作成できます。</h3>
+			</div>
+			<div class="col-sm-4">
+				<h3>ボタンを押して文章を出す直感的な操作が可能です。</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Main Content -->
+
+<!-- Call to Action -->
+<hr>
+<div class="page-header2">
+	<h3>私達はあなたのビジネスが世界へ広まるサポートをします。</h3>
+	<p><%= link_to "さっそくメールを作成する", '/mails', class: "btn btn-default btn-lg" %></p>
+</div>
+<!-- End Call to Action -->
+
+<%= render 'layouts/footer' %>
+
+<% end %>
+
+

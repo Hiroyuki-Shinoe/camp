@@ -2,12 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.hero-unit
-{
-	margin-left: 300px;
+html {
+  overflow-y: scroll;
 }
 
-.top-page1
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.service_name
 {
-	margin-left: 200px;
+	color: #999c9e;
 }
