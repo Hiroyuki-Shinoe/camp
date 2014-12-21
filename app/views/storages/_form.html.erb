@@ -1,39 +1,8 @@
 <%= form_for(storage) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="text_area_box">
-    <%= f.text_area :content, :size => "63x30" %>
+    <%= f.text_area :content %>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <br>
   <%= f.submit "テンプレートへ保存", class: "btn btn-large btn-primary", id: "temp" %>
   <% end %>

@@ -50,8 +50,14 @@
     display: none
 }
 
-.note-editor.codeview .note-codable {
+.note-editor.codeview {
     display: block
+}
+
+.note-codable {
+    display: block;
+    width: 100%;
+    height: 500px;
 }
 
 .note-editor .note-toolbar {
@@ -417,7 +423,7 @@
 }
 
 .note-editor .dropdown-menu li a i {
-    color: deepskyblue;
+    color: #ffffff;
     visibility: hidden
 }
 

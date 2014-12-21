@@ -1920,6 +1920,7 @@ pre code {
   }
   .col-lg-6 {
     width: 50%;
+    height: 100%;
   }
   .col-lg-5 {
     width: 41.66666667%;
@@ -3179,8 +3180,8 @@ input[type="button"].btn-block {
   opacity: 1;
 }
 .collapse {
-  display: none;
-  visibility: hidden;
+  display: block;
+  visibility: visible;
 }
 .collapse.in {
   display: block;
@@ -4712,7 +4713,7 @@ a.thumbnail.active {
 }
 .alert {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -6129,7 +6130,7 @@ button.close {
   display: block !important;
 }
 .invisible {
-  visibility: hidden;
+  visibility: visible;
 }
 .text-hide {
   font: 0/0 a;
