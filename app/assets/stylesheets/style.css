@@ -309,7 +309,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 }
 .navbar-fixed-top,
 .navbar-static-top {
-  background: #f3f3f4;
+  background: #fff;
 }
 .fixed-nav #wrapper {
   margin-top: 60px;
@@ -2176,6 +2176,7 @@ a:focus {
 }
 .border-bottom {
   border-bottom: 1px solid #e7eaec !important;
+  background-color: #fff;
 }
 .font-bold {
   font-weight: 600;
@@ -2629,9 +2630,6 @@ table.table-mail tr td {
 /* BACKGROUNDS */
 .gray-bg {
   background-color: #f3f3f4;
-}
-.white-bg {
-  background-color: #ffffff;
 }
 .navy-bg {
   background-color: #1ab394;
@@ -3621,10 +3619,8 @@ dd.project-people {
 .setings-item a {
   color: #fff;
 }
-.default-skin,
-.blue-skin,
-.ultra-skin,
-.yellow-skin {
+.default-skin
+ {
   text-align: center;
 }
 .default-skin {
@@ -3633,27 +3629,6 @@ dd.project-people {
 }
 .default-skin:hover {
   background: #199d82;
-}
-.blue-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
-}
-.blue-skin:hover {
-  background: #0d8ddb;
-}
-.yellow-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-3.png") repeat scroll 0 100%;
-}
-.yellow-skin:hover {
-  background: #ce8735;
-}
-.ultra-skin {
-  font-weight: 600;
-  background: url("patterns/header-profile-skin-2.png") repeat scroll 0 0;
-}
-.ultra-skin:hover {
-  background: #1a2d40;
 }
 
 

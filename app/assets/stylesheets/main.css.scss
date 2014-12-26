@@ -1,19 +1,21 @@
-// Place all the styles related to the About controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Global Layout
+================================= */
+.container {
+width: 1430px;
+}
 
 html {
   overflow-y: scroll;
 }
-
-
 section {
   overflow: auto;
 }
 
-textarea {
-  resize: vertical;
-}
+/* Global Header
+================================= */
+.navbar { margin-bottom: 0;}
+.navbar-brand { line-height: 28px; padding: 15px 0;}
+.dropdown-menu { min-width: 112px;}
 
 .center {
   text-align: center;
@@ -21,12 +23,6 @@ textarea {
     margin-bottom: 10px;
   }
 }
-
-.service_name
-{
-	color: #999c9e;
-}
-
 
 .collapse{
 	visibility: visible !important;
@@ -50,6 +46,24 @@ ul .compose_1
 	width: 100%
 }
 
+
+/* Editor
+================================= */
+textarea {
+  resize: vertical;
+}
+
+textarea
+{
+  border: 1px solid #e5e6e7;
+}
+
+textarea:focus
+{
+  border-color: #1ab394;
+    outline: 0 none;
+}
+
 .text_area_box textarea
 {
 	width: 100%;
@@ -64,32 +78,21 @@ ul .compose_1
 	margin-top: 15px
 }
 
-.sidebar-collapse
-{
-	float:left;
-}
 
-
-.search-something
-{
-	float:right !important;
-
-}
-
+/* Sidebar
+================================= */
+.navbar-static-side { background-color: #52d5cb; min-height: 1200px;}
+.sidebar-collapse { float:left; width:100%}
 .index2_sidebar
 {
 	width: 100%;
-	height: 300px;
-}
-
-.sidebar-collapse{
-	width:100%
 }
 
 .fa-envelope {
 	width:100%;
 	height:30px
 }
+
 li .category_1 .category_2 .category_3 .category_4
 {
 	list-style: none;
@@ -102,21 +105,10 @@ ul .compose_1 .compose_2 .compose_3 .category_4{
 .nav-label
 {
 	color: #ffffff !important;
-// 	margin-bottom: 20px !important;
 }
 
-textarea
-{
-	border: 1px solid #e5e6e7;
-}
-
-textarea:focus
-{
-	border-color: #1ab394;
-    // box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
-    outline: 0 none;
-}
-
+/* Navigation Header
+================================= */
 .about-header
 {
 	margin-bottom:0px !important;
@@ -168,22 +160,9 @@ textarea:focus
 
 .templatesbar{
 	width: 220px !important; 
-	// margin-top: 200px
-	// display:block
 }
-
-// .dropdown
-// {
-// 	float: right
-// }
 
 .singout-index
 {
 	width: 100px;
-	// float: right
 }
-
-// .service-name
-// {
-// 	margin-left: 200px
-// }
