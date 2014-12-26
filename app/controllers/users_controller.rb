@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "グローバルビジネスの世界へようこそ！"
-      redirect_to '/mails'
+      redirect_to '/mails/index2'
     else
       render 'new'
     end

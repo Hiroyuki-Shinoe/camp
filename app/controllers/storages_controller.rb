@@ -30,10 +30,10 @@ class StoragesController < ApplicationController
     @storage = current_user.storages.build(storage_params)
     if @storage.save
       flash[:success] = "文章は保存されました。"
-      redirect_to "/mails"
+      redirect_to "/mails/index2"
     else
       flash[:error] = "エラー！ 保存できる文章がありません。"
-      redirect_to '/mails'
+      redirect_to '/mails/index2'
     end
   end
 
