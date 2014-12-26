@@ -70,9 +70,9 @@ ul,li {
 .navbar-top-links li {
   display: inline-block;
 }
-.navbar-top-links li:last-child {
+/*.navbar-top-links li:last-child {
   margin-right: 40px;
-}
+}*/
 .navbar-top-links li a {
   padding: 20px 10px;
   min-height: 50px;
@@ -401,7 +401,7 @@ body.fixed-sidebar.mini-navbar .navbar-default .nav li a span {
   left: 0px;
 }
 .btn {
-  border-radius: 3px;
+  border-radius: 0px !important;
 }
 .float-e-margins .btn {
   margin-bottom: 5px;
@@ -1297,7 +1297,7 @@ a.list-group-item.active:focus {
   text-align: left;
 }
 .h-200 {
-  min-height: 200px;
+  height: 0px;
 }
 .legendLabel {
   padding-left: 5px;
@@ -2265,11 +2265,13 @@ video {
   height: 100%;
 }
 .wrapper-content {
+  height: 100%;
   padding: 20px 10px 40px;
 }
 #page-wrapper {
   padding: 0 15px;
   min-height: 568px;
+  height: 100%
   position: relative !important;
 }
 @media (min-width: 768px) {
@@ -3459,7 +3461,7 @@ a.compose-mail {
 }
 .mail-body {
   border-top: 1px solid #e7eaec;
-  padding: 20px;
+  padding: 10px;
 }
 .mail-text {
   border-top: 1px solid #e7eaec;
@@ -3755,5 +3757,6 @@ dd.project-people {
 @media (max-width: 1000px) {
   .welcome-message {
     display: none;
+    float: right;
   }
 }

@@ -21,7 +21,11 @@ $(function(){
         $('.category_3').show();
     });
 
-
+    // $('.big_category_4').click(function(){
+    //     $('.sidebar').hide();
+    //     $('.nav-top').children('li').hide();
+    //     $('.category_4').show();
+    // });
 
     $('.big_category').click(function(){
         console.log(1);
@@ -40,6 +44,10 @@ $(function(){
 
     $('.big_category').click(function(){
         $('.big_category_3').show();
+    });
+
+    $('.big_category').click(function(){
+        $('.big_category_4').show();
     });
 
     // $('.nav-top button').click(function() {

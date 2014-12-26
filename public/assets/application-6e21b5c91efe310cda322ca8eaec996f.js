@@ -12585,6 +12585,10 @@ $(function(){
         $('.category_3').show();
     });
 
+    $('.big_category_4').click(function(){
+    $('.nav-top').children('li').hide();
+        $('.category_4').show();
+    });
     // $('.nav-top button').click(function() {
     //     if ($(this).next('.compose').css('display') == 'block')
     //     {

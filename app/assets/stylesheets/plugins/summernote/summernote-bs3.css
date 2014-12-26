@@ -5101,9 +5101,9 @@ button.note-editor .close {
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .modal-dialog {
-    width: 600px;
+    width: 70%;
     padding-top: 30px;
     padding-bottom: 30px;
   }

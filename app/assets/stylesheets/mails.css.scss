@@ -18,7 +18,11 @@
 {
   display: none;
 }
-
+.mail_category_4 > :not(.category_4)
+{
+  display: none;
+}
+ 
 .navbar-static-side
 {
   background-color: #404040;

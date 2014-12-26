@@ -19,3 +19,8 @@
 //= require lumen/loader
 //= require lumen/bootswatch
 //= require_directory ./
+//= require zeroclipboard
+
+$(document).ready(function() {
+  var clip = new ZeroClipboard($(".my_clip_button"))
+});

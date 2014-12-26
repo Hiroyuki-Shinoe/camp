@@ -1,4 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.htmlc
 
 # ーーーーーーーカテゴリー１ーーーーーーーーーーーーーーーーーーーーーーーー
 
@@ -87,7 +87,27 @@
   title: 文末の挨拶
   category_id: 3
 
+# ーーーーーーーーカテゴリーーーーーーーーーーーーーーーーーーーーーーーーーーーー   
 
+17:
+  id: 17
+  title: 商談
+  category_id: 4
+
+18:
+  id: 18
+  title: 返信
+  category_id: 4
+
+19:
+  id: 19
+  title: 謝罪
+  category_id: 4
+
+20:
+  id: 20
+  title: 謝罪
+  category_id: 4
 
 
 
