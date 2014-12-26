@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
     </button>
     <div class="container">
-      <div class="navbar-brand">フェアリーメール</div>
+      <div class="navbar-brand">Lang Blaock</div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "サインアウト", signout_path, method: "delete" %></li>
@@ -30,8 +30,122 @@
       <% if @feed_storages.any? %>
       <h3>保存した文章</h3>
       <ol class="microposts">
-        <%= render @feed_storages %>
+        <div class="first-group">
+          <%= render @feed_storages %>
+        </div>
       </ol>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary templates-button" data-toggle="modal" data-target="#myModal-1">
+          商談
+        </button>
+      </div>
+      <div class="modal inmodal" id="myModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <i class="fa fa-laptop modal-icon"></i>
+              <h4 class="modal-title">商談</h4>
+              <small class="font-bold">このコンテンツは商談に関するテンプレートです</small>
+            </div>
+            <div class="modal-body">
+              <p>Hello Ms. Taylor, 
+                My name is Osamu Makihara. I am the purchasing manager of East West Trading. 
+                I am contacting you to inquire about your services. First of all, I would like to know the features of your services. Can you explain what makes your services different from others? 
+                Second, do you have a price list for your services? Lastly, do you provide customer support for companies in Japan? 
+                We are really interested in your services and hoping to install them into our system. 
+                I thank you for your attention and look forward to hearing from you. 
+                Sincerely yours,
+              </p>
+              </br>
+              </br>
+              <p>
+                Dear Sir or Madam, 
+                This is my first time to send e-mail to you. 
+                My name is Ken Nakata, working for XXX Co., Ltd. in Japan, and responsible for the purchasing. 
+                I am writing to request an estimate because we are interested in your product, Z-123-yyy. 
+                Please let me know the lowest export price and minimum order. 
+                I look forward to hearing from you. 
+                Sincerely yours,
+              </p>
+                <div class="form-group"> 
+              　</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Don't uses</button>
+                <button type="button" class="btn btn-primary">Use this template</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-primary templates-button" data-toggle="modal" data-target="#myModal-2">
+          返信
+        </button>
+      </div>
+      <div class="modal inmodal" id="myModal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <i class="fa fa-laptop modal-icon"></i>
+              <h4 class="modal-title">返信</h4>
+              <small class="font-bold">このコンテンツは返信に関するテンプレートです</small>
+            </div>
+            <div class="modal-body">
+              <p>
+                HDear Mr. X, Thank you for your inquiry. Let me check these points with our engineers. Reverting this matter soon. Best regards,
+              </p>
+              </br>
+              </br>
+              <p>
+                Dear Mr. X, Duly received your e-mail. We will discuss your request with our engineer and comment back to you. Best regards,
+              </p>
+                <div class="form-group"> 
+              　</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Don't uses</button>
+                <button type="button" class="btn btn-primary">Use this template</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-primary templates-button" data-toggle="modal" data-target="#myModal-3">
+          謝罪
+        </button>
+      </div>
+      <div class="modal inmodal" id="myModal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <i class="fa fa-laptop modal-icon"></i>
+              <h4 class="modal-title">謝罪</h4>
+              <small class="font-bold">このコンテンツは謝罪に関するテンプレートです</small>
+            </div>
+            <div class="modal-body">
+              <p>
+                Dear Mr. X, Thank you for your inquiry, but we are afraid the windows 7 model is no more available due to discontinuation and stock-out. We will have some of our distributors quote any equivalent windows 8 model to you. Your kind understanding would be much appreciated. Best regards,
+              </p>
+              </br>
+              </br>
+              <p>
+               Dear Mr. X, Thank you for your order, but the sales of XXX-101 has been sold well than we expected since end of last year. Therefore we don't have them in stock now and we will stop manufacturing them. We are sorry to cause you inconvenience. Meanwhile, we can supply the new model around end of next month. We would appreciated it if you consider the place an order for the new model. We look forward to hearing from you. Best regards,
+              </p>
+                <div class="form-group"> 
+              　</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Don't uses</button>
+                <button type="button" class="btn btn-primary">Use this template</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <%= will_paginate @feed_storages %>
       <% end %>
     </div>
