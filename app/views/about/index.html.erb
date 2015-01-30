@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "about", :media => "all" %>
 <% if signed_in? %>
 
 <!--Navbar -->
@@ -47,19 +48,31 @@
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
-		<div>
-			<div class="page-header">
+		<div class="col-sm-12">
+			<div class="page-header col-sm-9">
 				<h2>あなたのビジネスを世界へ広めよう！</h2>
 				<small class="subtitle">ようこそグローバルビジネスの舞台へ</small>
 			</div>
 			<div class="col-sm-4">
-				<h3>定型文作成にかかる時間と手間を省きます。</h3>
+				<h3>
+					定型文作成にかかる
+					<br>
+					時間と手間を省きます。
+				</h3>
 			</div>
 			<div class="col-sm-4">
-				<h3>１つのページ内で様々な文章を作成できます。</h3>
+				<h3>
+					１つのページ内で
+					<br>
+					様々な文章を作成できます。
+				</h3>
 			</div>
 			<div class="col-sm-4">
-				<h3>ボタンを押して文章を出す直感的な操作が可能です。</h3>
+				<h3>
+					ボタンを押して文章を出す
+					<br>
+					直感的な操作が可能です。
+				</h3>
 			</div>
 		</div>
 	</div>
@@ -152,8 +165,52 @@
 </div>
 <!-- End Call to Action -->
 
-<%= render 'layouts/footer' %>
+<!-- starts footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row sections">
+            <div class="col-sm-4 recent_posts">
+                <h3 class="footer_header">
+                    お問い合わせ
+                </h3>
+                <div class="post">
+                </div>
+                <div class="remodal" data-remodal-id="modal">
+                    サンプル
+                    <br>
+                    <a class="remodal-cancel" href="#">Close</a>
+                </div>
+                <a type="button" class="btn btn-primary" href="#modal">
+                    <h5>お問い合わせフォーム</h5>
+                </a>
+            </div>
+            <div class="col-sm-4 recent_posts">
+                <h3 class="footer_header">             
+                </h3>
+                <div class="post">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4>SUPPORT</h4>
+				<p><%= link_to "Contact", '#' %></p>
+				<p>FAQ</p>
+				<p>Terms of Use</p>
+				<p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="row credits">
+            <div class="col-md-12">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        &copy; 2015 Lang Block
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</footer>
 
 <% end %>
 
-
+<%= javascript_include_tag "jquery.remodal.min.js" %>
+<%= javascript_include_tag "http://code.jquery.com/jquery-latest.js" %>

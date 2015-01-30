@@ -20,6 +20,7 @@
 //= require lumen/bootswatch
 //= require_directory ./
 //= require zeroclipboard
+//= stub jquery.remodal.min.js
 
 $(document).ready(function() {
   var clip = new ZeroClipboard($(".my_clip_button"))
