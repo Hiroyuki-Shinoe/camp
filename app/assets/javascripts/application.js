@@ -21,6 +21,12 @@
 //= require_directory ./
 //= require zeroclipboard
 //= stub jquery.remodal.min.js
+//= stub landing/bootstrap.js
+//= stub landing/bootstrap.min.js
+//= stub landing/cbpAnimatedHeader.js
+//= stub landing/classie.js
+//= stub landing/inspinia.js
+//= stub landing/pace.min.js
 
 $(document).ready(function() {
   var clip = new ZeroClipboard($(".my_clip_button"))

@@ -1,25 +1,37 @@
+<%= stylesheet_link_tag "landing/bootstrap.min.css", :media => "all" %>
+<%= stylesheet_link_tag "landing/style", :media => "all" %>
 <%= stylesheet_link_tag "about", :media => "all" %>
+
+<body id="page-top">
 <% if signed_in? %>
 
 <!--Navbar -->
-<div class="navbar navbar-default about-header">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<div class="container about-container">
-			
-			<div class="navbar-collapse collapse navbar-responsive-collapse about-headerright">
-				<ul class="nav navbar-nav navbar-right">
-					<li><%= link_to "サインアウト", signout_path, method: "delete" %></li>
-					<li><%= link_to "お問い合わせ", '#' %></li>
-					<!-- <li class="service-name"><%= link_to "Lang Block", '' %></li> -->
-				</ul>
-			</div>
-		</div>
-	</div>
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/mails/index2">今すぐメール作成</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#page-top">ホーム</a></li>
+                        <li><a class="page-scroll" href="#testimonials">使用ガイド</a></li>
+                        <li class="page-scroll">
+                        	<%= link_to "サインアウト", signout_path, method: "delete" %>
+                        </li>
+                        <li class="page-scroll">
+                        	<%= link_to "お問い合わせ", '#' %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 </div>
 <!-- End navbar -->
 
@@ -33,10 +45,10 @@
 			無料で使える、企業の海外展開支援サービス
 		</p>
 		<p>
-			<%= link_to "メール作成はこちら！", '/mails/index2', class: "btn btn-default btn-lg" %>
+			<%= link_to "メール作成はこちら！", '/mails/index2', class: "btn btn-primary" %>
 		</p>
 		<p>
-			<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-default btn-lg" %>
+			<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-primary" %>
 		</p>
 		<small>ユーザー登録すると完成した文章を保存しておくことができます。</small>
 		<br>
@@ -54,25 +66,25 @@
 				<small class="subtitle">ようこそグローバルビジネスの舞台へ</small>
 			</div>
 			<div class="col-sm-4">
-				<h3>
+				<h4>
 					定型文作成にかかる
 					<br>
 					時間と手間を省きます。
-				</h3>
+				</h4>
 			</div>
 			<div class="col-sm-4">
-				<h3>
+				<h4>
 					１つのページ内で
 					<br>
 					様々な文章を作成できます。
-				</h3>
+				</h4>
 			</div>
 			<div class="col-sm-4">
-				<h3>
+				<h4>
 					ボタンを押して文章を出す
 					<br>
 					直感的な操作が可能です。
-				</h3>
+				</h4>
 			</div>
 		</div>
 	</div>
@@ -83,11 +95,57 @@
 <hr>
 <div class="page-header2">
 	<h3>私達はあなたのビジネスが世界へ広まるサポートをします。</h3>
-	<p><%= link_to "さっそくメールを作成する", '/mails/index2', class: "btn btn-default btn-lg" %></p>
+	<p><%= link_to "さっそくメールを作成する", '/mails/index2', class: "btn btn-primary" %></p>
 </div>
 <!-- End Call to Action -->
 
-<%= render 'layouts/footer' %>
+<section id="contact" class="gray-section contact">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+        <div class="row m-b-lg">
+            <div class="col-lg-3 col-lg-offset-3">
+                <address>
+                    <strong><span class="navy">Lang Block開発チーム</span></strong><br/>
+                    <span>yuxing0129@gmail.com</span>
+                    <abbr title="Phone"></abbr>
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-color">
+                    不具合報告やサービス改善のご要望等、
+                    <br/>
+                    ご気軽にご連絡下さい。
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:yuxing0129@gmail.com" class="btn btn-primary">Send us mail</a>
+                <p class="m-t-sm">
+                    Or follow us on social platform
+                </p>
+                <ul class="list-inline social-icon">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2015 Lang Block</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <% else %>
 
@@ -123,10 +181,10 @@
 			無料で使える、企業の海外展開支援サービス
 		</p>
 		<p>
-			<%= link_to "メール作成はこちら！", '/mails/index2', class: "btn btn-default btn-lg" %>
+			<%= link_to "メール作成はこちら！", '/mails/index2', class: "btn btn-primary" %>
 		</p>
 		<p>
-			<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-default btn-lg" %>
+			<%= link_to "ユーザー登録はこちら！", new_user_path, class: "btn btn-primary" %>
 		</p>
 		<small>ユーザー登録すると完成した文章を保存しておくことができます。</small>
 		<br>
@@ -161,56 +219,64 @@
 <hr>
 <div class="page-header2">
 	<h3>私達はあなたのビジネスが世界へ広まるサポートをします。</h3>
-	<p><%= link_to "さっそくメールを作成する", '/mails/index2', class: "btn btn-default btn-lg" %></p>
+	<p><%= link_to "さっそくメールを作成する", '/mails/index2', class: "btn btn-primary" %></p>
 </div>
 <!-- End Call to Action -->
 
-<!-- starts footer -->
-<footer id="footer">
+<section id="contact" class="gray-section contact">
     <div class="container">
-        <div class="row sections">
-            <div class="col-sm-4 recent_posts">
-                <h3 class="footer_header">
-                    お問い合わせ
-                </h3>
-                <div class="post">
-                </div>
-                <div class="remodal" data-remodal-id="modal">
-                    サンプル
-                    <br>
-                    <a class="remodal-cancel" href="#">Close</a>
-                </div>
-                <a type="button" class="btn btn-primary" href="#modal">
-                    <h5>お問い合わせフォーム</h5>
-                </a>
-            </div>
-            <div class="col-sm-4 recent_posts">
-                <h3 class="footer_header">             
-                </h3>
-                <div class="post">
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h4>SUPPORT</h4>
-				<p><%= link_to "Contact", '#' %></p>
-				<p>FAQ</p>
-				<p>Terms of Use</p>
-				<p>Privacy Policy</p>
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Contact Us</h1>
             </div>
         </div>
-        <div class="row credits">
-            <div class="col-md-12">
-                <div class="row copyright">
-                    <div class="col-md-12">
-                        &copy; 2015 Lang Block
-                    </div>
-                </div>
-            </div>            
+        <div class="row m-b-lg">
+            <div class="col-lg-3 col-lg-offset-3">
+                <address>
+                    <strong><span class="navy">Lang Block開発チーム</span></strong><br/>
+                    <span>yuxing0129@gmail.com</span>
+                    <abbr title="Phone"></abbr>
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-color">
+                    不具合報告やサービス改善のご要望等、
+                    <br/>
+                    ご気軽にご連絡下さい。
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:yuxing0129@gmail.com" class="btn btn-primary">Send us mail</a>
+                <p class="m-t-sm">
+                    Or follow us on social platform
+                </p>
+                <ul class="list-inline social-icon">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2015 Lang Block</strong></p>
+            </div>
         </div>
     </div>
-</footer>
+</section>
 
 <% end %>
 
-<%= javascript_include_tag "jquery.remodal.min.js" %>
-<%= javascript_include_tag "http://code.jquery.com/jquery-latest.js" %>
+<%= javascript_include_tag "landing/pace.min.js" %>
+<%= javascript_include_tag "landing/bootstrap.min.js" %>
+<%= javascript_include_tag "landing/classie.js" %>
+<%= javascript_include_tag "landing/cbpAnimatedHeader.js" %>
+<%= javascript_include_tag "landing/inspinia.js" %>
+
+</body>
