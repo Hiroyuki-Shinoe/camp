@@ -1,6 +1,15 @@
 /* 
 ================================= */
 
+.navbar-right {
+float: right!important;
+margin-right: 200px;
+}
+
+.navbar-brand {
+margin-left: 0px;
+}
+
 .collapse 
 {
   display: none;
@@ -188,3 +197,6 @@ footer ul li {
 {
   height: 500px;
 }
+
+
+
