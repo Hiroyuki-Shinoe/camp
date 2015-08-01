@@ -53,6 +53,8 @@ end
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
+  gem "fog", "~>1.20", require "fog/aws/storage"
+  gem 'asset_sync'
 end
 
 # コピペ
