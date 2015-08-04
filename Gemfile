@@ -27,6 +27,8 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'net-ssh', '!= 2.10.0'
+
 # has_secure_password用
 gem 'bcrypt-ruby', '3.1.2'
 # テストデータ用
@@ -50,9 +52,9 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
-group :production :staging do
-  gem 'pg'
-  gem 'rails_12factor'
+group :production, :staging do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
   gem 'asset_sync'
 end
 
