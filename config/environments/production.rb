@@ -76,5 +76,5 @@ Camp::Application.configure do
   # Do not dump schema after migrations.
   # config.active_record.dump_schema_after_migration = false
 
-  config.action_controller.asset_host = "//#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
+  config.action_controller.asset_host = "//#{ENV['langblock']}.s3.amazonaws.com"
 end
